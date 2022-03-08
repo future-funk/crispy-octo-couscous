@@ -9,3 +9,5 @@ jobs:
         uses: actions/checkout@v3
       - name: Dependency Review
         uses: dsp-testing/fluffy-engine@main
+        with:
+          - repo_token: {{ secrets.repo_token }}
