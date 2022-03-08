@@ -10,4 +10,4 @@ jobs:
       - name: Dependency Review
         uses: dsp-testing/fluffy-engine@main
         with:
-          - repo_token: {{ secrets.repo_token }}
+          - repo_token: {{ secrets.REPO_TOKEN }}
