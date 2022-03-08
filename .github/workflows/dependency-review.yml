@@ -7,7 +7,6 @@ jobs:
     steps:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
-      - name: Dependency Review
-        uses: dsp-testing/fluffy-engine@main
+      - uses: dsp-testing/fluffy-engine@main
         with:
           repo_token: {{ secrets.REPO_TOKEN }}
