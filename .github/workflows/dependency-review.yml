@@ -1,13 +1,14 @@
 name: 'Dependency Review'
 on: [pull_request]
 
+permissions:
+  contents: read
+
 jobs:
   dependency-review:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
-      - name: Dependency Review
-        uses: dsp-testing/fluffy-engine@main
-        with:
-          repo_token: ${{ secrets.REPO_TOKEN }}
+      - name: 'Dependency Review'
+        uses: actions/dependency-review-action@v1
