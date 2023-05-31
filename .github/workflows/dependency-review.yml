@@ -8,6 +8,4 @@ jobs:
       - name: 'Checkout Repository'
         uses: actions/checkout@v3
       - name: Dependency Review
-        uses: dsp-testing/fluffy-engine@main
-        with:
-          repo_token: ${{ secrets.REPO_TOKEN }}
+        uses: actions/dependency-review-action@v3.0.5
