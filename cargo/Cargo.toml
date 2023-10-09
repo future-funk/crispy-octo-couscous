@@ -1,0 +1,8 @@
+[package]
+name = "one-two-one-two"
+version = "1.2.3"
+edition = "2023"
+
+
+[dependencies]
+sccache = "0.3.0"
