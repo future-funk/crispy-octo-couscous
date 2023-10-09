@@ -10,4 +10,4 @@ jobs:
       - name: Dependency Review
         uses: actions/dependency-review-action@update-octokit
         with:
-          comment-summary-in-pr: true
+          comment-summary-in-pr: always
